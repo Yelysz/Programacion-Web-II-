@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<section class="flex flex-col items-center justify-center text-center min-h-[calc(100vh-8rem)] w-full bg-gradient-to-b from-indigo-50 to-white px-6">
+    <div class="flex flex-col items-center justify-center w-full max-w-3xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-indigo-700 mb-4">
+            Bienvenido a <span class="text-indigo-900">BookSwap</span>
+        </h1>
+
+        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+            <strong>BookSwap</strong> es una plataforma digital creada con
+            <span class="text-indigo-600 font-semibold"> ASP.NET Core</span>
+            que permite a los usuarios compartir, intercambiar y descubrir libros de manera colaborativa.
+            Nuestro objetivo es fomentar la lectura y la reutilización de libros entre amantes de la literatura.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a asp-controller="Libros" asp-action="Index"
+               class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow hover:bg-indigo-700 transition">
+                Explorar Catálogo
+            </a>
+
+            <a asp-controller="Libros" asp-action="Compartir"
+               class="px-6 py-3 bg-gray-200 text-gray-800 font-semibold rounded-lg hover:bg-gray-300 transition">
+                Compartir un Libro
+            </a>
+        </div>
+
+        <p class="mt-8 text-sm text-gray-500">
+            Aprende más sobre el desarrollo con
+            <a href="https://learn.microsoft.com/aspnet/core" class="text-indigo-500 hover:underline" target="_blank">
+                ASP.NET Core
+            </a>.
+        </p>
+    </div>
+</section>
